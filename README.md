@@ -14,10 +14,15 @@ El proyecto se ha realizado en base a las indicaciones de D. Miguel Muñoz en el
 
 La solución se ha realizado con Net6, aunque la versión del vídeo es anterior. Para el proyecto del API, se ha mantenido el la estructura con Controladores y no se ha cambiado a una Minimal API.
 
+## Validadores
+
+Se ha agregado a través del paquete **FluentValidation** un validador al Dto usado para crear un producto.
+
+Una vez creado, luego se inyecta en los servicios en el proyecto de los Controladores
+
 ## Cosas por hacer
 
 - Agregar un proyecto de Test, tanto unitarios como de integración.
 - Agregar la gestión de excepciones.
 - Agregar autenticación y gestión de roles.
-- Agregar Validadores para las peticiones Http - Post y Put.
 - Agregar una gestión de Log.

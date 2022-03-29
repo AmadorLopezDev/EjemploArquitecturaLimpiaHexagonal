@@ -1,3 +1,4 @@
+using Controllers;
 using InversionOfControl;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Add Validators From Project
+builder.Services.AddValidators();
+//Add Inversion of Dependency Inyection
 builder.Services.AddProjectDependencies(builder.Configuration);
 
 var app = builder.Build();
